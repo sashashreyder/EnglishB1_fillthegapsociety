@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gap-fill | Contemporary Society</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- video-background -->
+  <video id="bg-video" autoplay muted loop playsinline preload="auto">
+    <source src="bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="card">
+    <h1>Gap-fill: Contemporary Society Vocabulary</h1>
+
+    <!-- инструкция -->
+    <p class="instructions">
+      Type the missing vocabulary in each blank. Hover the <strong>?</strong> to see a hint, then click
+      <em>Check&nbsp;your&nbsp;score</em> to see how you did.
+    </p>
+
+    <p>
+      Today, more people 
+      <span class="blank" data-answer="immigrate">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">to enter a new country</span>
+      </span>
+      to urban areas because global
+      <span class="blank" data-answer="infrastructure">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">basic roads, utilities, systems</span>
+      </span>
+      is <strong>expanding</strong> rapidly. While cities <em>are getting</em> bigger, many citizens <em>are experiencing</em>
+      <span class="blank" data-answer="eco-anxiety">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">stress about the environment</span>
+      </span>.
+      Some refuse to
+      <span class="blank" data-answer="conform">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">follow group norms</span>
+      </span>
+      to the always-on culture and instead <em>are embracing</em> a slower,
+      <span class="blank" data-answer="eco-conscious">
+        <input type="text" />
+        <span class="tooltip">?</span>
+        <span class="tipbox">environmentally aware</span>
+      </span>
+      lifestyle.
+    </p>
+
+    <button id="check">Check your score</button>
+  </div>
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2>📝 Your Results</h2>
+      <p id="modal-text"></p>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
